@@ -19,7 +19,7 @@ Right-click **[here](https://raw.githubusercontent.com/MissingNO123/encode-video
 
 ### Python
 
-Make sure you have Python 3 installed. Any version works. **On Windows**, make sure you select "Add Python to PATH" during installation.
+Make sure you have [Python](https://www.python.org/downloads/) installed. Any version of Python 3 works. **On Windows**, make sure you select "Add Python to PATH" during installation.
 
 ### FFMpeg
 
