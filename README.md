@@ -55,7 +55,7 @@ Drag and drop a video file on top of the script. It will make a smaller copy of 
 
 For more advanced functionality, you can use the command line. To get started, type `-h` or `--help` to show the entire list of functions. You'll get something like this:
 
-```powershell
+```
 $ python encode-to-filesize.py --help
 usage: encode-to-filesize.py [-h] [-n NAME] [-t TARGET_SIZE] [-vw WIDTH] [-vh HEIGHT] [-f FPS] [-i IN_POINT] [-o OUT_POINT] [-cv VIDEO_CODEC]
                              [-ca AUDIO_CODEC] [-ba AUDIO_BITRATE] [-m] [-at AUDIO_TRACKS] [--audio-track-name AUDIO_TRACK_NAME] [-y] [-v]
@@ -133,3 +133,6 @@ python C:\path\to\encode-to-filesize.py %* -vh 720 -f 60 -t 50 -ca aac -cv libx2
 ```
 
 You can make a bunch of these for different presets if you want, like if you upload to different sites with different filesize limits.
+
+## Issues
+If you run into any problems or have suggestions, please open an [Issue](../issues) or make a [Pull Request](../pulls).
