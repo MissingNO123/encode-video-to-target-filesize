@@ -135,4 +135,4 @@ python C:\path\to\encode-to-filesize.py %* -vh 720 -f 60 -t 50 -ca aac -cv libx2
 You can make a bunch of these for different presets if you want, like if you upload to different sites with different filesize limits.
 
 ## Issues
-If you run into any problems or have suggestions, please open an [Issue](../issues) or make a [Pull Request](../pulls).
+If you run into any problems or have suggestions, please open an [Issue](../../issues) or make a [Pull Request](../../pulls).
