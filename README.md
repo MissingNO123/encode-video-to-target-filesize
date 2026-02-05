@@ -95,7 +95,7 @@ options:
   -v, --verbose         Enable verbose output (e.g. show ffmpeg output)
 ```
 
-## CLI Examples
+### Usage Examples (CLI)
 
 #### Trim a video to the first 60 seconds, auto-scale to 480p/60fps, and target 5MB:
 ```bash
