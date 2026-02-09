@@ -12,6 +12,7 @@ import os
 import argparse
 import subprocess
 
+filesystem_slash = '/' if os.name != 'nt' else '\\'
 
 # Check if FFMPeg and FFProbe are installed and accessible
 try:
@@ -99,6 +100,8 @@ else:
     file_name = os.path.basename(file)
     file_name = os.path.splitext(file_name)[0]
 folder_path = os.path.dirname(file)
+if folder_path == '':
+    folder_path = '.'
 
 target_size = target_size_mb * 1000 * 1000 * 8 # 8Mbit
 if target_size > 1_000_000_000: # 1 GB
@@ -258,7 +261,7 @@ if args.out_point:
 if args.yes == True:
     ffmpeg_command.append('-y')
 
-ffmpeg_command.append(f'{folder_path}/{file_name}-{str(target_size_mb)}mb.mp4')
+ffmpeg_command.append(f'{folder_path}{filesystem_slash}{file_name}-{str(target_size_mb)}mb.mp4')
 
 print("FFMPEG Command:")
 print(' '.join(ffmpeg_command))
